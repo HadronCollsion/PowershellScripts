@@ -47,7 +47,8 @@ if (-not (Test-Path -Path $dest)) {
 
 $fp = Join-Path -Path $dest -ChildPath $fn
 
-Start-BitsTransfer $url $fp -ProgressAction SilentlyContinue -EA Stop
+$ProgressPreference = 'SilentlyContinue'
+Start-BitsTransfer $url $fp -EA Stop
 Start-Process -FilePath $fp
 
 function Get-SHA1 {
